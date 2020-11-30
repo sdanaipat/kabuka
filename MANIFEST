@@ -2,3 +2,4 @@
 setup.cfg
 setup.py
 kabuka/kabuka.py
+kabuka/test_kabuka.py
