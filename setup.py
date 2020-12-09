@@ -12,8 +12,10 @@ setup(
     url='https://github.com/sdanaipat/kabuka',
     download_url='https://github.com/sdanaipat/kabuka/archive/kabuka-0.1.tar.gz',
     keywords=['stock price', 'yahoo finance', 'market price', 'get latest stock price'],
+    scripts=['./kabuka/kabuka'],
     install_requires=[
         'requests',
+        'fire',
         'beautifulsoup4',
     ],
     classifiers=[
