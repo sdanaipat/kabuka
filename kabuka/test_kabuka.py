@@ -33,7 +33,7 @@ def mocked_requests_get(url):
         def __init__(self, text):
             self.text = text
 
-    uri = url.replace("https://finance.yahoo.com/quote", str(TEST_DATA_DIR))
+    uri = url.replace("https://finance.yahoo.com/quote", str(TEST_DATA_DIR)) + ".html"
     try:
         with open(uri) as f:
             return MockedResponse(f.read())
