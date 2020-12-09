@@ -5,7 +5,6 @@ from kabuka import is_numeric, get_latest_price
 
 
 TEST_DATA_DIR = Path(os.path.dirname(os.path.realpath(__file__))) / "test_data"
-print(TEST_DATA_DIR)
 
 def test_is_numeric():
     assert not is_numeric("abc")
@@ -35,8 +34,8 @@ def mocked_requests_get(url):
 
     uri = url.replace("https://finance.yahoo.com/quote", str(TEST_DATA_DIR)) + ".html"
     try:
-        with open(uri) as f:
-            return MockedResponse(f.read())
+        with open(uri, "rb") as f:
+            return MockedResponse(f.read().decode("utf8"))
     except IOError:
         with open(TEST_DATA_DIR / "unknown_symbol.html") as f:
             return MockedResponse(f.read())
