@@ -1,6 +1,6 @@
 import fire
-from kabuka import kabuka
+from kabuka import get_latest_price
 
 
 if __name__ == '__main__':
-  fire.Fire(kabuka.get_latest_price)
+  fire.Fire(get_latest_price)
