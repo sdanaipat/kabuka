@@ -1,16 +1,21 @@
+# from distutils.core import setup
+from setuptools import setup
 
-from distutils.core import setup
+with open('README.md') as f:
+    long_description = f.read()
 
 setup(
     name='kabuka',
     packages=['kabuka'],
-    version='0.1',
+    version='0.1.0',
     license='MIT',
     description='get latest stock price from Yahoo! Finance',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Danaipat Sodkomkham',
     author_email='sdanaipat@gmail.com',
     url='https://github.com/sdanaipat/kabuka',
-    download_url='https://github.com/sdanaipat/kabuka/archive/v0.1.tar.gz',
+    download_url='https://github.com/sdanaipat/kabuka/archive/v0.1.0.tar.gz',
     keywords=['stock price', 'yahoo finance', 'market price', 'get latest stock price'],
     scripts=['./kabuka/kabuka'],
     install_requires=[
