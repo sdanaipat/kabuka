@@ -10,7 +10,7 @@ setup(
     author='Danaipat Sodkomkham',
     author_email='sdanaipat@gmail.com',
     url='https://github.com/sdanaipat/kabuka',
-    download_url='https://github.com/sdanaipat/kabuka/archive/kabuka-0.1.tar.gz',
+    download_url='https://github.com/sdanaipat/kabuka/archive/v0.1.tar.gz',
     keywords=['stock price', 'yahoo finance', 'market price', 'get latest stock price'],
     scripts=['./kabuka/kabuka'],
     install_requires=[
